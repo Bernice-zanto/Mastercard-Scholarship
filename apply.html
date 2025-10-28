@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply - Mastercard Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --deep-blue: #0A2647;
+      --light-blue: #E6F0FA;
+      --white: #FFFFFF;
+      --gray: #555;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light-blue);
+      color: var(--deep-blue);
+    }
+    header {
+      background: var(--deep-blue);
+      color: var(--white);
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    form {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(10,38,71,0.1);
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.4rem;
+      font-weight: 600;
+      color: var(--deep-blue);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.9rem;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--gold);
+      outline: none;
+    }
+    .submit-btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: var(--gold);
+      color: var(--deep-blue);
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s;
+    }
+    .submit-btn:hover {
+      background: #e6c44e;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--deep-blue);
+      color: var(--white);
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Application Form</h1>
+  </header>
+
+  <div class="container">
+    <form id="scholarshipForm" onsubmit="event.preventDefault(); window.location.href='success.html';">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required placeholder="e.g., Aisha Oluwaseun">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required placeholder="aisha@example.com">
+
+      <label for="whatsapp">WhatsApp Number</label>
+      <input type="tel" id="whatsapp" required placeholder="+234 801 234 5678">
+
+      <label for="nationality">Nationality</label>
+      <input type="text" id="nationality" required placeholder="e.g., Nigerian">
+
+      <label for="highschool">High School Attended</label>
+      <input type="text" id="highschool" required placeholder="e.g., Queens College, Lagos">
+
+      <label for="address">Home Address</label>
+      <textarea id="address" rows="3" required placeholder="123 African Unity Street, Nairobi, Kenya"></textarea>
+
+      <label for="university">Preferred University</label>
+      <select id="university" required>
+        <option value="">-- Select University --</option>
+        <option>University of Cape Town (South Africa)</option>
+        <option>Kwame Nkrumah University of Science and Technology (Ghana)</option>
+        <option>University of Pretoria (South Africa)</option>
+        <option>McGill University (Canada)</option>
+        <option>University of Edinburgh (UK)</option>
+        <option>Stanford University (USA)</option>
+        <option>Harvard University (USA)</option>
+        <option>University of Oxford (UK)</option>
+        <option>ETH Zurich (Switzerland)</option>
+        <option>Ashesi University (Ghana)</option>
+      </select>
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Mastercard Foundation Scholarship Program
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mastercard Foundation Scholarship Program</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --deep-blue: #0A2647;
+      --light-blue: #E6F0FA;
+      --white: #FFFFFF;
+      --gray: #555;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light-blue);
+      color: var(--deep-blue);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, var(--deep-blue), #144672);
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,30 L100,100 L0,100 Z" fill="rgba(255,255,255,0.05)"/></svg>') repeat-x;
+      background-size: 100px 50px;
+      animation: wave 20s linear infinite;
+    }
+    @keyframes wave { 0% { background-position: 0 0; } 100% { background-position: 100px 0; } }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .description {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(10,38,71,0.1);
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+    .description strong {
+      color: var(--gold);
+    }
+    .apply-btn {
+      display: block;
+      width: 220px;
+      margin: 3rem auto 2rem;
+      padding: 1rem 2rem;
+      background: var(--gold);
+      color: var(--deep-blue);
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(212,175,55,0.3);
+    }
+    .apply-btn:hover {
+      background: #e6c44e;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(212,175,55,0.4);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--deep-blue);
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      .description { padding: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mastercard Foundation Scholarship Program</h1>
+    <p class="subtitle">Empowering the Next Generation of African Leaders</p>
+  </header>
+
+  <div class="container">
+    <div class="description">
+      <p>The <strong>Mastercard Foundation Scholars Program</strong> is one of the most transformative scholarship initiatives in Africa. Launched in 2012, it has provided <strong>over 40,000 talented young Africans</strong> with access to quality secondary and university education.</p>
+      <br>
+      <p>Spanning <strong>30+ countries</strong> and partnering with top universities in Africa, Canada, the U.S., and Europe, the program goes beyond tuition — offering mentorship, leadership training, internships, and career development.</p>
+      <br>
+      <p>Scholars have gone on to become entrepreneurs, doctors, engineers, policymakers, and changemakers. From rural villages to global boardrooms, the impact is profound and lasting.</p>
+      <br>
+      <p><strong>Join the movement. Change your future. Change Africa.</strong></p>
+    </div>
+
+    <a href="apply.html" class="apply-btn">Apply Now</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Mastercard Foundation Scholarship Program. All rights reserved.
+  </footer>
+
+</body>
+</html>
